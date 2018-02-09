@@ -1,0 +1,39 @@
+var myObj, x; myObj = {
+  "Top 5 Bands": [
+    {
+      "Bands": "Piebald"
+      "About": "Rock band from Boston, Mass"
+      "band": "img/piebald-friend.jpg"
+    },
+
+    {
+      "Bands": "Against Me!"
+      "About": "Punk band from Gainesville, Fl"
+      "band": "img/against-me.jpg"
+    },
+
+    {
+      "Bands": "Alkaline Trio"
+      "About": "Punk band from Chicago, Il"
+      "band": "img/alkaline trio.jpg"
+    },
+
+    {
+      "Bands": "The Menzingers"
+      "About": "Punk band from Philidelphia, Pa"
+      "band": "img/the menzingers.jpeg"
+    },
+
+    {
+      "Bands": "The Movielife"
+      "About": "Pop-Punk band with members from New York and New Jersey"
+      "band": "img/themovielife.jpg"
+    }
+
+  ]
+}
+  var xhr = mew XMLHttprequest(): xhr.onload = function() {
+  if(xhr.status === 200) {
+
+  }
+}

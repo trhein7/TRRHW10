@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS Website Layout</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="C:\Users\ClevelandCodes\source\repos/stylesheet1.css" type="tex/css" rel="stylesheet" />
+</head>
+<div id="body">
+
+    <div class="header">
+        <h1>Todd Rhein<img src="C:\Users\ClevelandCodes\Pictures/todd.jpg" width="180" height="240" align="left" /></h1>
+    </div>
+
+    <div class="topnav">
+        <a href="http://localhost:49821/Contact%20Me.html">Contact Me</a>
+        <a href="http://localhost:49821/Cleveland%20Codes%20Schedule.html">Cleveland Codes</a>
+        <a href="http://localhost:49821/about%20me.html">More About Me</a>
+    </div>
+
+    <p id="demo"></p>
+    <button onclick="displayInfo()">Top 5 Bands</button>
+    <script>
+        var i;
+        var bandinfo = "";
+        var bands = [{
+            "Bands": "Piebald",
+            "About": "Rock band from Boston, Mass",
+            "Band Photo": "img/piebald-friend.jpg",
+
+        }, {
+            "Band": "Against Me!",
+            "About": "Punk Band from Gainesville, FL",
+            "Band Phote": "img/against-me.jpg",
+
+        }, {
+            "Band": "Alkaline Trio",
+            "About": "Punk band from Chicago, Il",
+            "Band Photo": "img/alakline trip.jpg",
+
+        }, {
+            "Band": "The Menzingers",
+            "About": "Punk band from Philidelphia, Pa",
+            "Band Photo": "img/the menzingers.jpeg",
+
+        }, {
+            "Band": "The Movielife",
+            "About": "Pop-punk band from Long Island, New York",
+            "Band Photo": "Mother",
+
+        }
+                        }];
+        for (i = 0; i < bands.length; i++) {
+
+            bandinfo += bands[i].fname + "<br>" + bands[i].lname + "<br>" + bands[i].relation + "<br>" + bands[i].relationid + "<br><p>********</p>";
+        }
+
+        function displayInfo() {
+            document.getElementById("demo").innerHTML = bandinfo;
+        }
+    </script>
+
+    <div class="row">
+        <div class="column side">
+            <h2>Favorite Sports Teams</h2>
+            <p>
+                <dl>
+                    <dt>Manchester United</dt>
+                    <dd>Arguably the biggest soccer team in the world and have been my favorite team since the 1999 classic FA Cup semi-final game against Arsenal.</dd>
+                    <dt>Pittsburgh Penguins</dt>
+                    <dd>My mom being from Pittsburgh and never having an NHL team in Cleveland, the Pens were the obvious choice for me.  Also if i picked anyone else my Grandmother probably would have disowned me.</dd>
+                    <dt>Cleveland Indians</dt>
+                    <dd>Growing up in Cleveland my family has always been a huge baseball family. My Grandfather played pro-ball in the 40's before being drafted, my dad coached Berea High School to 10 state finals, winning 8 of them.  Baseball is a family passion passed down from generation to generation along with our love of the Tribe.</dd>
+                    <dt>Olympique Lyonnais</dt>
+                    <dd>The thing that attracted me most to Lyon is their insane and die-hard fan base, their chants, their attitude, everything about the team appealed to me. </dd>
+                    <dt>Columbus Crew</dt>
+                    <dd>At the moment i have a very torrid love affair with the Crew.  I've been watching and going to Crew games since a very young age, but now the crooked owner is trying to move the team to Austin, Texas and i have to decide if watching and supporting what maybe their last year of their existence is worth the heartbreaks i know will surely come at season's end.</dd>
+                </dl>
+            </p>
+        </div>
+        <div class="column middle">
+            <h2>About Me</h2>
+            <p>I am 28 years old.  I am a veteran retail manager and current barista at a 24 hour coffee shop in Cleveland.  I am taking the Cleveland Codes program at Tri-C Metro to hopefully land a career in software development and with the guidance of our teacher and coding guru Sam Nasr i believe i will accomplish that goal.</p>
+            <p>In my spare time i love playing video games, watching movies, reading, and watching sports.  Watching soccer, hockey, and baseball is my favorite thing to do with friends, whether we go to a game or watch it on tv, we always manage to have a ton of fun.</p>
+        </div>
+        <div class="column side">
+            <h2>Favorite Quotes</h2>
+            <p>
+                <em><q>I am a man of fortune, and i must seek my fortune</q></em></br>
+                -Henry Avery
+            </p>
+            <p>
+                <em><q>What came first? The music or the misery? People worry about kids playing with guns or watching violent videos, that some sort of culture of violence will take them over.  Nobody worries about kids listening to thousands, literally thousands of songs about heartbreak, rejection, pain, misery, and loss.  Did I listen to pop music because I was miserable or was I miserable because I listened to pop music. l</q></em></br>
+                -Nick Hornby
+            </p>
+        </div>
+    </div>
+    <img src="C:\Users\ClevelandCodes\Downloads/crew.jpg" width="620" height="620" />
+</div>
+    
+</html>

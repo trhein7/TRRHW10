@@ -1,0 +1,77 @@
+﻿
+<style > * {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffd800;
+    background-image: url(C:\Users\ClevelandCodes\Downloads/crew.jpg);
+    background-position: center bottom;
+    background-repeat: no-repeat, repeat;
+    padding: 15px;
+    opacity: 1.0;
+}
+
+.header {
+    border-radius: 50px / 15px;
+    background-color: #ff0000;
+    height: 300px;
+    padding: 20px;
+    text-align: left;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #ffd800;
+}
+
+    .topnav a {
+        float: left;
+        display: block;
+        color: #000000;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+        .topnav a:hover {
+            background-color: #ffffff;
+            color: black;
+        }
+
+
+.column {
+    border-radius: 50px / 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #ffffff;
+    background-color: #000000;
+    float: left;
+    padding: 10px;
+}
+
+    .column.side {
+        width: 25%;
+    }
+
+
+    .column.middle {
+        width: 50%;
+    }
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media (max-width: 600px) {
+    .column.side, .column.middle {
+        width: 100%;
+    }
+}
+
+img {
+    border-radius: 50%;
+}
+
+</style > </head >
